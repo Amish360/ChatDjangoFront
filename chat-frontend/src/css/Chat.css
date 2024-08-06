@@ -1,0 +1,39 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .messages-container {
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .messages-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .message-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .message-item:hover {
+    background-color: #f7f7f7;
+  }
+  
+  /* Chat.css content remains the same as before */
+  

@@ -1,13 +1,20 @@
-// src/App.js
 import React from 'react';
-import Chat from '../src/components/chat';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Messages from './components/Messages';
+import Chat from './components/ChatScreen';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Chat />
+    <div className="app-container">
+    <Router>
+        <Routes>
+          <Route exact path="/" element={<Messages />} />
+          <Route path="/chat/:recipient" element={<Chat/>} />
+        </Routes>
+    </Router>
     </div>
   );
-}
+};
 
 export default App;
