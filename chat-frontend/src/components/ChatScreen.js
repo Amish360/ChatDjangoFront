@@ -12,7 +12,7 @@ const Chat = () => {
 
   const handleSendMessage = () => {
     if (newMessage.trim()) {
-      setMessages([...messages, { id: messages.length + 1, user: 'DemoUser', content: newMessage, recipient }]);
+      setMessages([...messages, { id: messages.length + 1, user: 'Amish', content: newMessage, recipient }]);
       setNewMessage('');
     }
   };
