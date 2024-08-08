@@ -1,18 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Welcome from './components/Welcome';
+import Signup from './components/Signup';
+import Login from './components/Login';
 import Messages from './components/Messages';
 import Chat from './components/ChatScreen';
 import './App.css';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <div className="app-container">
-    <Router>
+      <Router>
         <Routes>
-          <Route exact path="/" element={<Messages />} />
-          <Route path="/chat/:recipient" element={<Chat/>} />
+          <Route path="/" element={<Welcome />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="/chat/:recipient" element={<Chat />} />
         </Routes>
-    </Router>
+      </Router>
     </div>
   );
 };
