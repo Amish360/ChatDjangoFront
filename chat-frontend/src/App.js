@@ -7,12 +7,12 @@ import Messages from './components/Messages';
 import Chat from './components/ChatScreen';
 import './App.css';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div className="app-container">
       <Router>
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route  path="/" element={<Welcome />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/messages" element={<Messages />} />
