@@ -5,6 +5,7 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import Messages from './components/Messages';
 import Chat from './components/ChatScreen';
+import ForgetPassword from './components/ForgetPassword';
 import './App.css';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/chat/:recipient" element={<Chat />} />
+          <Route path="/forget-password" element={<ForgetPassword />} />
         </Routes>
       </Router>
     </div>

@@ -37,6 +37,9 @@ const Login = () => {
       <p className="mt-4">
         Don't have an account? <Link to="/signup" className="underline">Sign Up</Link>
       </p>
+      <p className="mt-4">
+        Forgot your password? <Link to="/forget-password" className="underline">Reset Password</Link>
+      </p>
     </div>
   );
 };
